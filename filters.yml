@@ -1,6 +1,6 @@
 # version: 0.6
 
-# Order matters here.
+# Order matters here!!
 - match: "Email Preferences"
   archive: true
   label: "_Archive"
@@ -117,21 +117,17 @@
   archive: true
   label: "_Archive"
 
-- ignore: true
-  rule:
-    - subject: "Unsubscribe request by UFE"
-  delete: true
-
 # Newsletters
 - from:
     any:
-      - yes-reply@ufe.email
+      - yes-reply@unfuck.email
+      - yes-reply@randomdailyurls.com
   archive: false
   important: true
   not_spam: true
   category: "CATEGORY_PERSONAL"
 #
-#
+# TODO: Add other language filters
 # For Spanish language
 # - match: "Haz clic aquí si deseas dejar de recibir nuestros correos"
 #   archive: true

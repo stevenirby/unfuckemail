@@ -1,0 +1,80 @@
+name: Build and Release Filters
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "filters.yml"
+  workflow_dispatch:
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install pipx and gmail-yaml-filters
+        run: |
+          python -m pip install --upgrade pip
+          pip install pipx
+          pipx install gmail-yaml-filters
+
+      - name: Generate gmailFilters.xml
+        run: |
+          gmail-yaml-filters --dry-run filters.yml > gmailFilters.xml
+
+      - name: Generate fastmailFilters.xml
+        run: |
+          sed 's/_Archive/Archive/g' filters.yml | gmail-yaml-filters --dry-run - > fastmailFilters.xml
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ github.run_number }}
+          release_name: Email Filters v${{ github.run_number }}
+          body: |
+            ## Email Filters Release
+
+            This release contains automatically generated email filters for Gmail and Fastmail.
+
+            ### Downloads:
+            - **Gmail**: Download `gmailFilters.xml` and import it in Gmail Settings > Filters
+            - **Fastmail**: Download `fastmailFilters.xml` and import it in Fastmail Settings > Rules
+
+            ### Changes:
+            - Built from filters.yml commit: ${{ github.sha }}
+          draft: false
+          prerelease: false
+
+      - name: Upload Gmail Filters
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./gmailFilters.xml
+          asset_name: gmailFilters.xml
+          asset_content_type: application/xml
+
+      - name: Upload Fastmail Filters
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./fastmailFilters.xml
+          asset_name: fastmailFilters.xml
+          asset_content_type: application/xml
