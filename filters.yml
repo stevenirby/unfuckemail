@@ -1,0 +1,162 @@
+# version: 0.6
+
+# Order matters here.
+- match: "Email Preferences"
+  archive: true
+  label: "_Archive"
+
+- match: "Manage your email subscriptions here"
+  archive: true
+  label: "_Archive"
+
+- match: "opt out"
+  archive: true
+  label: "_Archive"
+
+- match: "Manage this newsletter"
+  archive: true
+  label: "_Archive"
+
+- match: "this promotional e-mail is being sent"
+  archive: true
+  label: "_Archive"
+
+- match: "Manage&nbsp;this&nbsp;newsletter"
+  archive: true
+  label: "_Archive"
+
+- match: "let us know you are not interested"
+  archive: true
+  label: "_Archive"
+
+- match: "Update My Email Preference"
+  archive: true
+  label: "_Archive"
+
+- match: "Manage Subscriptions"
+  archive: true
+  label: "_Archive"
+
+- match: "If you wish to remove your email address from our mailing list"
+  archive: true
+  label: "_Archive"
+
+- match: "Change your email preferences"
+  archive: true
+  label: "_Archive"
+
+- match: "You can opt out of receiving our newsletter at any time by unsubscribing"
+  archive: true
+  label: "_Archive"
+
+- match: "Too many emails?"
+  archive: true
+  label: "_Archive"
+
+- match: "If you do not want to receive more promotions"
+  archive: true
+  label: "_Archive"
+
+- match: "Manage Email Preferences"
+  archive: true
+  label: "_Archive"
+
+- match: "If you wish to remove your email address from our mailing list, please"
+  archive: true
+  label: "_Archive"
+
+- match: "If you no longer wish to receive these emails you can"
+  archive: true
+  label: "_Archive"
+
+- match: "Remove this e-mail address from future"
+  archive: true
+  label: "_Archive"
+
+- match: "update your preferences"
+  archive: true
+  label: "_Archive"
+
+- match: "This is a promotional email from"
+  archive: true
+  label: "_Archive"
+
+- match: "Click here to opt out."
+  archive: true
+  label: "_Archive"
+
+- match: "If you wish to remove your email address from our mailing list, please click here."
+  archive: true
+  label: "_Archive"
+
+- match: "Un-subscribe from these emails"
+  archive: true
+  label: "_Archive"
+
+- match: "Manage this newsletter"
+  archive: true
+  label: "_Archive"
+
+- match: "Update your subscription preferences"
+  archive: true
+  label: "_Archive"
+
+- match: "update your email preferences"
+  archive: true
+  label: "_Archive"
+
+- match: "to stop receiving emails from"
+  archive: true
+  label: "_Archive"
+
+- match: "unsubscribe"
+  archive: true
+  label: "_Archive"
+
+- match: "Unsubscribe"
+  archive: true
+  label: "_Archive"
+
+- ignore: true
+  rule:
+    - subject: "Unsubscribe request by UFE"
+  delete: true
+
+# Newsletters
+- from:
+    any:
+      - yes-reply@ufe.email
+  archive: false
+  important: true
+  not_spam: true
+  category: "CATEGORY_PERSONAL"
+#
+#
+# For Spanish language
+# - match: "Haz clic aquí si deseas dejar de recibir nuestros correos"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "cancelar su suscripción"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "para cancelar la suscripción"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Deseas dejar de recibir estos emails?"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Darse de Baja"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "si deseas dejar de recibir nuestros correos"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "anula tu suscripción"
+#   archive: true
+#   label: "_Archive"
