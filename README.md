@@ -8,8 +8,8 @@
 
 The easiest way to use these filters is to download the pre-built XML files from our [latest release](https://github.com/stevenirby/unfuckemail/releases/latest):
 
-1. **For Gmail users**: Download `gmailFilters.xml`
-2. **For Fastmail users**: Download `fastmailFilters.xml`
+1. **For Gmail users**: Download [`gmailFilters.xml`](https://github.com/stevenirby/unfuckemail/releases/latest/download/gmailFilters.xml)
+2. **For Fastmail users**: Download [`fastmailFilters.xml`](https://github.com/stevenirby/unfuckemail/releases/latest/download/fastmailFilters.xml)
 
 ### Import the Filters
 
