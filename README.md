@@ -94,10 +94,8 @@ To change the archive label name:
 Found a promotional email that isn't being caught? Please contribute!
 
 1. Fork this repository
-2. Add the new pattern to `filters.yml`
+2. Add the new pattern to [`filters.yml`](https://github.com/stevenirby/unfuckemail/blob/master/filters.yml)
 3. Submit a pull request
-
-This project is part of the larger [UnfuckEmail](https://github.com/stevenirby/unfuckemail) ecosystem.
 
 ## 📄 License
 
