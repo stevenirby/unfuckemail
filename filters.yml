@@ -156,3 +156,113 @@
 # - match: "anula tu suscripción"
 #   archive: true
 #   label: "_Archive"
+
+# For Japanese language
+# - match: "メールニュースの配信解除をご希望のお客様はこちら"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "メールをご希望されない方は、サブスクリプションの解除からお手続きをお願いします"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "メールマガジンの配信停止"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "お知らせメールの配信を希望しない方は下記URLをクリックしてください"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "メルマガ配信アドレスの変更や解除はこちら"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "受け取りを拒否される場合は"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "お知らせメールの配信を希望しない方"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "配信停止／変更"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "配信停止はこちら"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "配信停止"
+#   archive: true
+#   label: "_Archive"
+
+# For Portuguese language
+# - match: "Não quer mais receber nossos e-mails, descadastre-se."
+#   archive: true
+#   label: "_Archive"
+
+# - match: "cancele sua inscrição"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Não deseja mais receber esse e-mail?"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Cancele o recebimento"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Cancelar inscrição"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "preferências de e-mails"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Gerenciar assinatura"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Remover meu email dessa lista de email"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Se não quiser mais receber nossos e-mails"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Atualize suas preferências"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Esse email é enviado por:"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Caso não queira mais receber este tipo de e-mail, clique aqui"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Se você não deseja mais receber e-mails como este"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Não deseja receber mais nossos emails?"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "lista de email"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "descadastre-se"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "Descadastre-se"
+#   archive: true
+#   label: "_Archive"
