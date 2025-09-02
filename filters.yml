@@ -109,6 +109,10 @@
   archive: true
   label: "_Archive"
 
+- match: "Update your privacy settings"
+  archive: true
+  label: "_Archive"
+
 - match: "unsubscribe"
   archive: true
   label: "_Archive"
