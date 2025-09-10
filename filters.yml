@@ -270,3 +270,7 @@
 # - match: "Descadastre-se"
 #   archive: true
 #   label: "_Archive"
+
+# - match: "Clique aqui para se descadastrar"
+#   archive: true
+#   label: "_Archive"
