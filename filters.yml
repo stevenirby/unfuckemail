@@ -202,6 +202,14 @@
 #   archive: true
 #   label: "_Archive"
 
+# - match: "このようなメールを受け取らない"
+#   archive: true
+#   label: "_Archive"
+
+# - match: "受け取らない"
+#   archive: true
+#   label: "_Archive"
+
 # For Portuguese language
 # - match: "Não quer mais receber nossos e-mails, descadastre-se."
 #   archive: true
