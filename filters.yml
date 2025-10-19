@@ -41,6 +41,10 @@
   archive: true
   label: "_Archive"
 
+- match: "no longer wish to receive such emails from us"
+  archive: true
+  label: "_Archive"
+
 - match: "Change your email preferences"
   archive: true
   label: "_Archive"
