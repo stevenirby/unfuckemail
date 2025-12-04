@@ -2,6 +2,8 @@
 
 🧹 **Clean up your inbox automatically!** These email filters help organize promotional emails, newsletters, and spam by automatically archiving emails that contain unsubscribe links and promotional language.
 
+---
+
 ## 🚀 Quick Start (Recommended)
 
 ### Download Pre-built Filters
@@ -108,3 +110,15 @@ This project is licensed under the **Creative Commons Attribution-NonCommercial 
 For commercial use, please reach out to discuss licensing options.
 
 [![CC BY-NC 4.0](https://licensebuttons.net/l/by-nc/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc/4.0/)
+
+---
+
+## 🎲 Discover More
+
+This project is brought to you by [Random Daily URLs](https://randomdailyurls.com) - a newsletter that delivers one absolutely random website to your inbox every weekday.
+
+**No algorithms. No corporate bullshit. Just pure, curated randomness.**
+
+[Subscribe to Random Daily URLs →](https://randomdailyurls.com)
+
+Made with ❤️ and 🔥 by [@StevenIrby](https://randomdailyurls.com)
